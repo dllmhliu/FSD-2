@@ -1,11 +1,25 @@
 package me.cyper.fsd.lab05.entity;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+
 public class User {
     private Integer userId;
+
+    @NotBlank
     private String name;
+    
+    @NotBlank
+    @Email
     private String email;
+    
+    @NotBlank
     private String username;
+    
+    @NotBlank
     private String password;
+    
+    private boolean admin;
 
     public Integer getUserId() {
         return userId;
@@ -47,8 +61,18 @@ public class User {
         this.password = password;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
     @Override
     public String toString() {
-        return "User [userId=" + userId + ", name=" + name + ", email=" + email + ", username=" + username + "]";
+        return "User [userId=" + userId + ", name=" + name + ", email=" + email + ", username=" + username + ", admin="
+                + admin + "]";
     }
+
 }

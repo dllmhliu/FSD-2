@@ -7,10 +7,14 @@
 1. [x] Spring MVC 5
 2. [x] Spring Security 5
 3. [x] Spring JDBC
-4. [x] JSP/EL/JSTL
-5. [x] Bootstrap 4.3
-6. [x] Tomcat 9
-7. [x] H2 In-Memory Database
+4. [x] Spring Logging
+5. [x] Spring Bean Validation (JSR-303)
+6. [x] Spring Global Exception Handler
+7. [x] JSP/EL/JSTL
+8. [x] Bootstrap 4.3
+9. [x] jQuery Toast Plugin
+10. [x] Tomcat 9
+11. [x] H2 In-Memory Database
 
 ## How to run
 
@@ -25,18 +29,29 @@ cp ./target/course-app.war TOMCAT_HOME/webapps
 2. Copy `target/course-app.war` to `<TOMCAT_HOME>/webapps`
 3. Start up tomcat 9 server `sh <TOMCAT_HOME>/bin/startup.sh`
 4. Open in browser: http://localhost:8080/course-app/
+5. Built-in users: `admin/admin` and `tomcat/tomcat`.
 
 ## Spring Security
+
+[Official reference doc](https://docs.spring.io/spring-security/site/docs/5.1.6.RELEASE/reference/htmlsingle/#ns-config)
 
 [Spring Security Guides](https://docs.spring.io/spring-security/site/docs/current/guides/html5/)
 
 ## Exception Handling
+
+https://www.baeldung.com/global-error-handler-in-a-spring-rest-api
 
 https://www.baeldung.com/exception-handling-for-rest-with-spring
 
 ## Logging
 
 https://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/
+
+## Validation
+
+https://lmonkiewicz.com/programming/get-noticed-2017/spring-boot-rest-request-validation/
+
+https://www.baeldung.com/global-error-handler-in-a-spring-rest-api
 
 ## References
 
